@@ -1,152 +1,62 @@
-# Arquitectura de una web de autoridad basada en el modelo de James Clear
-Introducción al los modelos
-- Datamecum
-- Founderz
-- James Clear
-- Qué se puede tomar de cada uno
+# **Plan de implementación para María Peñarrocha**
 
- Implantación de una web de autoridad personal
-- Ghost
-- Presupuesto de implantación: 1900 €
+**Arquitectura y presupuestos para la producción de una web de autoridad personal, por un lado, y una plataforma de venta e impartición de cursos por otro, basadas en los modelos de James Clear, Datamecum y Founderz.**
 
-## Introducción a los modelos
+He tenido en cuenta que la web de autoridad personal y los libros se ayudan mutuamente. 
 
-- James Clear representa el modelo de **marca personal + contenido + libro + newsletter** que convierte autoridad en audiencia y luego en negocio.
-- Datamecum y Founderz representan dos modelos de **producto formativo escalable**.
-- Uso el modelo James Clear para definir una **web de autoridad, marca personal, libros y distribución por mail**. Usa un newsletter periódico que se almacena en la propia web. Es la cara visible de la autora. Permite conocer su actividad editorial. Publicita cursos y másteres de otra plataforma.
-- Uso el modelo Datamecum - Founderz para definir una plataforma con **cursos de implantología y cirugía bucal, webinars, alumni y distribución por canales de marketing**.  Facilita el acceso a materiales, multimedia y clases grabadas. Permite la comunicación directa entre profesor y alumno. Facilita la creación de comunidades alumni y la creación de eventos y webinars.
+Por un lado, la marca María Peñarrocha construye autoridad con la publicación de los newsletter y la publicitación de los libros y los cursos. 
 
-LAS DOS WEBS QUE QUEREMOS CONSTRUIR BASADAS EN LOS MODELOS
+Por otro lado, el ecosistema digital de formación continua con cursos mantiene una infraestructura específica para venta, acceso al material del curso, comunicación con los profesores, comunidad de alumnos en curso y alumni.
 
-- 1. Web destinada a construir autoridad orientada a publicación de newsletter y publicitación de los libros y los cursos. Modelo de James Clear. 
+> **Esta separación permite que la identidad pública de la autora no quede subordinada a la lógica comercial del campus.**
 
-2. Ecosistema digital de formación con cursos, que construya comunidad y ofrezca continuidad a los alumnos. Modelos de Datamecum + Founderz.
+## James Clear
+**James Clear** es el autor del libro *Atomic Habits* y de la exitosa newsletter con entre 2,5 y 3  millones de suscriptores. 
+No ha conseguido ese éxito sólo gracias a su prosa y a sus útiles mensajes con contrastada calidad. Ha triunfado por difundirlos a través de un sistema editorial muy consistente: contenido útil, formato reconocible y una frecuencia estable de publicación. Eso construye confianza a largo plazo.
 
-Esta separación permite que la identidad pública de autora no quede subordinada a la lógica comercial del campus, al tiempo que la formación continua mantiene una infraestructura específica para venta, acceso y comunidad.
-### Datamecum
+Su comunicación funciona porque combina varias cosas muy bien:
+- **Formato ultraclaro**: 3 ideas, 2 citas y 1 pregunta. Eso hace que la newsletter sea fácil de reconocer y de consumir
+-  **Puntualidad extrema**: la envía cada jueves y ,al parecer, lleva años haciéndolo sin romper la promesa. 
+- **Practicidad y brevedad**: sus textos son cortos, útiles y muy compartibles. 
+- **Autoridad temática**: habla solo de su territorio, muy definido.
 
-- **Cursos online**, clases grabadas, docentes disponibles en directo. 
-- **Contacto continuo** con el director académico para dudas o sugerencias. La comunidad también está muy presente: hablan de red Alumni LinkedIn, chats de clase, encuentros presenciales y eventos llamados «camiDatas» en ciudades.
-- **Ecosistema** donde el alumno aprende y puede quedarse para cosumir los webinars semanales, newsletter mensual y contenido posterior al curso. El alumnado no desaparece tras el curso. No da sólo cursos.
-- **Participación** en proyectos, artículos y libros técnicos.
+## Datamecum y Founderz
+Datamecum es una escuela de formación en analítica de datos e IA que lleva unos 4 años funcionando. Ya estaba vendiendo cursos al menos en 2023 y hay alguna referencia que se habla de una constitución como empresa en 2022.
+
+Sus cursos tienen estos elementos técnicos extrapolables: 
+- **Posicionamiento muy claro**: se presentan como referencia en una sóla cosa, no como una escuela genérica.
+- **Formato**: clases online en directo, que se graban para poder verlas después.
+- **Visibilidad continua a través de la divulgación**: webinars, YouTube, presentaciones y contenido educativo que funciona como embudo de confianza.
+- **Comunidad**: la pertenencia a la comunidad Datamecum aparece como parte central de la experiencia. Uso de la plataforma Meetup.
+- **Uso de varias plataformas:** no han inventado nada. Usan Zoom, usan Meetup para mantener el flujo de información entre los alumnos y captar nuevos, usan Youtube...
+- **Ecosistema:** el alumno aprende y puede quedarse para cosumir los webinars semanales, newsletter mensual y contenido posterior al curso. El alumnado no desaparece tras el curso. No da sólo cursos. Tiene alumnii en Linkedin.
 - **Uso de Meetup**, una plataforma para crear y gestionar comunidades a través de eventos y webinars. Es una puerta de entrada al producto final: el curso. Meetup es el mecanismo para que personas nuevas descubran la comunidad y se unan a ella.
 
-  Meetup
-      ↓
-Webinars gratuitos
-      ↓
-Conoces a la comunidad
-      ↓
-YouTube (grabaciones )
-      ↓
-LinkedIn (contenido diario)
-      ↓
-Web de cursos
-      ↓
-Cursos y másteres de pago
+**FOUNDERZ**
+Founderz se dedica a la formación masiva, de entrada sencilla y vinculada a partners como Microsoft. De founderz **me quedo con la accesibilidad (ofrece cursos cortos y gratuitos que luego pueden desembocar en otros de pago) y la certificación bien visible.** El resto es modelo Datamecum. 
 
-**EL CURSO DE DATAMECUM**
-- **Materiales de práctica** y una **biblioteca de apoyo** para que el alumno siga trabajando fuera del horario. En la práctica, eso suele querer decir ejercicios paso a paso, archivos de ejemplo.
-- **Ejercicios guiados.** El profesor propone un caso, indica qué hacer primero, cómo avanzar y qué resultado esperar al final. 
-- **Materiales del curso bajo membresía,** con ejercicios autocorregibles o enviables al profesor, apuntes, PDFs, plantillas, enlaces o entregables.
-- **Clases en directo.** Las clases en directo se graban y se ofrecen dentro de la web mediante membresía para que el alumno pueda repasarlas más tarde, recuperar una parte que se perdió o estudiar a su propio ritmo. Pueden ser presenciales u online mediante Zoom.
-### Founderz
+---
+## 1. Implantación de una web de autoridad personal: 1.900 €
 
-- Founderz se dedica a la formación masiva, de entrada sencilla y vinculada a partners como Microsoft. 
-- De founderz me quedo con la accesibilidad (ofrece cursos cortos y gratuitos que luego pueden desembocar en otros de paga) y la certificación bien visible. 
-### James Clear
+**Web sencilla** 
+- Inicio (El mensaje o el newsletter de la semana)
+- Newsletters (repositorio)
+- Libros (repositorio con enlaces de venta)
+- Cursos (este probablemente sea solo un enlace a la plataforma)
+- Autora (Una bio. Igual esto mejor en el footer)
 
-- James Clear vende **autoridad** alrededor de hábitos, sistemas, mejora continua y aplicación práctica. 
-- Su web y su newsletter 3-2-1 funcionan como un sistema editorial muy eficiente: contenido breve, recurrente, fácil de compartir y alineado con su libro _Atomic Habits_. 
-- Audiencia > confianza > ventas de libros, conferencias y productos derivados.
-- Contruye una plataforma editorial que hace crecer la marca. 
-### Qué se puede tomar de cada uno
+**Objetivo**
+Consolidar una voz de autora experta con control de marca que autogestione su web de autoridad publicando y manejando suscripciones
 
-- James Clear: construcción de marca personal y constancia editorial, con newsletters sencillos y periódicos, directos y claros.
-- Datamecum: mecánica de negocio. Me quedo con casi todo: su idea de comunidad, sus ex-alumnos, su ecosistema basado en plataformas separadas (sistema de cursos- meetup - plataforma de vídeo). Las clases en directo grabadas, materiales descargables, sesiones de dudas. Me gusta la idea de un ejercicio final o caso final de curso (o reto clínico) con presentación. 
-- En el modelo Datamecum, la comunidad se sostiene con redes como LinkedIn, Meetup, webinars, eventos y presencia de alumnos en actividades compartidas. Eso se puede traducir en una red de exalumnos con una agenda de encuentros online de casos, novedades y revisión de técnicas. 
--  Founderz: Me gusta la entrada simple a la plataforma con módulos de cursos sencillos gratis, y su certificación visible. 
-
-Sobre la plataforma para impartir másteres universitarios y cursos, hay varias opciones.
-
--------------
-## 1. Implantación de una web de autoridad personal
-
-- Web sencilla. Su mapa es corto: **Home – Libros – Newsletters – Cursos**. Objetivo: consolidar una voz de autora experta con control de marca y difundir por mail. 
-- Aplicado a este proyecto, el ecosistema de James Clear sugiere una newsletter simple, fácil de sostener y vinculada a libros, webinars y cursos. 
-- Una estrategia sería publicar piezas cortas y frecuentes. Y diseñarlas para que sean susceptibles de publicar en formatos distintos: artículos breves, vídeos cortos, webinars, o introducciones a cursos. Eso crea autoridad editorial sin depender solo de una acción puntual. Y diversifica la presencia de la marca en varios formatos y plataformas.
-
-> **Función pricipal: posicionar como referente. Publicación de ideas, difusión de artículos en la lista de mail, presentación de libros y relación continua con dentistas y lectores.** 
-
-**GHOST**
-Coste anual del paquete básico de alojamiento hasta 1.000 mails: entre 180 y 350 €.
-Ghost está diseñado para el flujo editorial:
 1. Un lector se suscribe.
 2. Recibe un correo de bienvenida.
-3. Publicas un artículo.
-4. Ghost envía automáticamente ese artículo a los suscriptores.
+3. La autora publica un artículo.
+4. La web envía automáticamente ese artículo a los suscriptores y/o lo deja en abierto, con opciones de segmentación básicas.
 
-Cuando publicas un artículo, puedes programar Ghost para decidir quién puede leerlo en la web y a quién se le envía por correo.
-
-**Pros**
-- Ghost está pensado para publicación profesional, newsletters integradas, membresías, segmentación y analíticas de SEO, lo que lo convierte en una herramienta especialmente adecuada para difundir una marca personal o para hacer una revista.
-- Carga rápido y no necesita ningún tipo de mantenimiento.
-- Desde el sencillo backend de Ghost se gestiona la web y se configuran los newsletters con todos los automatismos de una herramienta de difusión por mail profesional.
-- El alojamiento en Ghost hace que la web entre en funcionamiento muy rápido, esté siempre actualizada.
-- Tiene una apariencia novedosa, sobria, limpia y moderna, con muchas plantillas diferentes y un grado de personalización alto.
-- Tiene su propia pasarela de pago para membresías que no se queda un porcentaje si la usas.
-
-**Contras**
-- Menos flexible si quieres añadir funcionalidades. 
-- Ecosistema pequeño. No tienes los miles de plantillas y plug-ins de wordpress.
-
-**WORDPRESS**
-Coste anual parecido a Ghost, entre alojamiento y pago por plug-ins y servicios.
-Si quieres enviar Newsletters, tienes que contratar un servicio externo. 
-
-**Pros**
-- Muchísima flexibilidad para crecer y adaptar la web a casi cualquier necesidad.
-- Ecosistema enorme de temas, plugins e integraciones para crecer y tener una web grande.
-- Muy útil si la web de autoridad puede terminar conectándose con más herramientas o páginas.
-- Probablemente el usario ya conozca el back-end y tenga una curva de aprendizaje más corta todavía... aunque eso también depende de la plantilla.
-- Puedes hacer todo lo que Ghost hace... y programaciones de envio de mails mucho más complejas.
-
-**Contras**
-- Más mantenimiento, más actualizaciones y más puntos de fallo.
-- Puede volverse más lento o desordenado por los plugins.
-- Para una web de marca personal simple, a veces ofrece más de lo que realmente hace falta.
-
-> **Cualquiera de las dos tecnologías (Wordpress o Ghost) puede dar resultado. Para una web de autoridad, newsletter, libros y una presencia editorial sobria, Ghost encaja mejor. Si la prioridad es dejar la puerta abierta a una web mucho más expandible y modular, WordPress es la opción más versátil.**
-
-**SECCIONES DE LA WEB DE AUTORIDAD PERSONAL**
--  **Inicio.-** Presentación de la autora que aporte autoridad. Reseña del último libro con descarga gratis de uno de los capítulos a cambio del mail y enlace a Amazon; Formulario de captación de mail.
-- **Cursos.-** Enlace puente hacia la web de formación. Hasta que se demuestre que es mejor hacer otra cosa, simplemente enlaza a la home de la plataforma de cursos.
-- **Newsletters.-** Repositorio de todos los Newsletters. Captación de mail.
-- **Libros.-** Repositorio de libros a la venta y su enlace a Amazon. Captación de mail.
-- **Autora.-** Una biografía académica de la autora.
-
-### Ghost
-
-El objetivo es consolidar la presencia pública de la autora, aumentar su comunidad de lectores y convertir la publicación de contenidos en el eje de captación para sus libros, newsletters y futuros programas formativos.
-- construir prestigio
-- captar suscriptores
-- organizar el archivo editorial 
-- derivar tráfico cualificado hacia la academia.
-
-Elijo Ghost porque está pensado exactamente para lo que la autora pretende y no hay previsión de aumentar sus funciones. Publicación profesional, newsletters integradas, quizá membresías (aquí hay un punto de crecimiento que Ghost tienen previsto) segmentación y analítica editorial, SEO...  es una herramienta muy adecuada para un proyecto de autoridad intelectual.
-
-La arquitectura base sería: 
-- Home
-- Libros
-- Newsletters 
-- Enlace a cursos
-
-### Presupuesto de implantación: 1.900 € 
-
-Tiempo de producción: 6 semanas
+**Tiempo de producción: 6 semanas**
 Fases:
 1. Definición estratégica con SEO básico.
-2. Implantación de la web en Ghost.
+2. Implantación de la web.
 3. Configuración técnica de la plataforma: formularios de alta y captación.
 4. Maquetación y diseño de las páginas.
 5. Maquetación y diseño de la plantilla del mail.
@@ -155,13 +65,57 @@ Fases:
 8. Acompañamiento en el manejo de la herramienta.
 
 **Incluye**
-
-- Ghost instalado y funcionando con el diseño al gusto.
+- Web instalada y funcionando con el diseño al gusto.
 - Newsletter funcionando con formulario de suscripción, confirmación de alta y envío manual de mails.
 - Formación de uso y acompañamiento para la resolución de problemas.
 
 **Opciones de crecimiento posterior**
-
-- Producción de contenidos.
+- Producción de contenidos. Una estrategia a medio plazo es diseñarlas para que sean susceptibles de ser publicadas en formatos distintos: artículos breves, vídeos cortos, webinars, o introducciones a cursos. Y en otras redes. Eso crea autoridad editorial sin depender solo de una acción puntual. Y diversifica la presencia de la marca en varios formatos y plataformas.
 - Automatizaciones avanzadas de mail.
-- Integración con Notion, Bluesky, Linkedin, Slack, Circle o Kajabi
+- Integración con Linkedin, Slack, Circle, Kajabi, Notion, Bluesky, Mastodon.
+---
+
+## 2. Implantación de un ecosistema de cursos
+Aquí entramos en un terreno con muchas mas opciones que la web de marca personal. Antes de dar un presupuesto de producción hay que entender qué tipo de. cursos y quién los va impartir, con qué materiales, con qué recursos... 
+
+**Hay mucho de lo que hablar aquí**
+
+- Materiales de práctica y una biblioteca de apoyo para que el alumno siga trabajando fuera del horario. 
+- Ejercicios guiados. El profesor propone un caso, indica qué hacer primero, cómo avanzar y qué resultado esperar al final. 
+- Clases en directo. Presenciales o por videoconferencia, se graban y se ofrecen dentro de la web mediante membresía.
+-  Docentes disponibles en directo y contacto continuo. ¿El profesor está disponible siempre para dudas o sugerencias en un chat. o en un correo interno?
+-  **Circle.** La comunidad de alumnas y alumnos. Establece un flujo para que los alumnos resulevan dudas y hablen entre ellos. Sirve también como flujo para los alumni. Se puede integrar en la web.
+- **Kajabi.** Está pensada para manejar membresías, programas y otros productos digitales basados en conocimiento. Se puede integrar en la web.
+- **Materiales del curso**. Ejercicios autocorregibles y/o libres, enviables al profesor, apuntes, PDFs, plantillas, enlaces o entregables, libros, vídeos.. Se pueden hacer un montón de cosas aquí, desde material SCORM o Moodle...
+- Gestión de redes. en un sistema de cursos basado en Datamecum, esto es indispensable.
+
+### Wordpress + Kajabi + Circle
+Una infraestructura de formación continua creada con **WordPress como plataforma pública de la academia, Kajabi como plataforma formativa** y **Circle como plataforma para crear comunidad,** es una buena apuesta.
+A priori yo implementaría este flujo.
+
+https://www.kajabi.com
+Plataforma para cursos. 179 $/mes
+El alumno hace el curso en Kajabi, ve las grabaciones y recursos allí.
+
+https://circle.so
+Plataforma para comunidad (chat+ eventos ) 89 $/mes
+Circle sirve para discusión, seguimiento, networking, sesiones de preguntas y continuidad entre promociones. Pasa a Circle para convivir con el grupo, resolver dudas y quedarse en la red de alumnos. Esta opción reduce complejidad y evita duplicar funciones.
+Puedes separar cursos, dudas, eventos, materiales y grupos por tema. Eso es especialmente útil para una academia, porque permite que un alumno entre, encuentre su espacio y vuelva después sin depender de buscar mensajes antiguos.
+
+Todo esto serviría para implantar un sistema como el de Datamecum.
+
+### Presupuesto para el ecosistema de cursos
+En realidad no tengo información suficiente para dar una cifra, así que prefiero no adelantarla. Igual no es necesario, puesto que ya hay una persona encargándose de ello... creo.
+
+Pero quién sabe. Igual necesitas una dirección de proyecto. Esto es gordo. Yo puedo tenerlo listo en Noviembre.
+
+**Producción en 6-10 semanas**
+- Briefing y arquitectura: 1–2 semanas
+- Implantación WordPress: 2–3 semanas
+- Integración de Kajabi: 1–2 semanas
+- Integración de Circle: 1 semana
+- Ajustes y lanzamiento: 1–2 semanas
+
+---
+Hablamos, María.
+Salud!
