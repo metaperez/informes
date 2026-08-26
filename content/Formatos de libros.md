@@ -1,7 +1,28 @@
 # Formatos de libros
-He investigado los distintos formatos de libros disponibles en Amazon KDP. Las opciones de formato son muy limitadas. Te las pongo abajo junto con las del libro que te gusta y las características de formato actual de tu libro «Las 10 preguntas...»
+**He investigado los distintos formatos de libros disponibles en Amazon KDP *print on demand*. Las opciones de formato son limitadas. No permite un corte diferente de la cubierta respecto a la tripa y por tanto no se pueden colocar solapas. Tampoco está disponible el formato del libro Ikigai, aunque sí parecidos.** 
 
-### A. Formato Ikigai (preferido)
+#### Lo que podemos hacer para mejorar la edición
+Por un lado, las dimensiones actuales del libro «Las 10 preguntas...» son muy parecidas a las de Ikigai. Por otro lado, mantener el servicio de Amazon KDP de *print on demand* facilita extraordinarimante la distribución.
+
+Por tanto creo que lo mejor es mantener el formato, pero volver a hacer el pdf con los siguientes cambios:
+
+1. Aumentar un punto el tamaño en el cuerpo de letra.
+2. Aumentar medio centímetro el ancho de la mancha de la página. 
+3. Aumentar la interlínea. Eso nos hará ganar 18 páginas y producirá un lomo un poco más grueso.
+4. Centrar la mancha del texto en la hoja y la apartamos un poco del lomo hacia los extremos.
+5. Cambiar el papel a crema.
+6. Portada en brillo. No tengo mucha fe, pero podemos pedir una prueba por menos de cuatro euros. A ver.
+
+Con todo eso, podemos encargar un ejemplar de prueba y valorar, mientras mantenemos a la venta el actual.
+
+#### Ejemplares como el Ikigai para entregar o vender en mano
+Puedes valorar la posibilidad de imprimir 10 ó 20 ejemplares con solapa para vender en mano en una presentación o para regalar en un congreso.
+
+Te puedo mirar presupuesto en una imprenta digital de calidad. No creo que salga por más de 10 euros por libro... Probablemente menos, aunque me puedo equivocar. Hace varios años que sólo imprimo en una rotativa barata de Navarra que va a escala... :)
+
+## FORMATOS DISPONIBLES
+
+#### A. Formato Ikigai (preferido y posible en cualquier imprenta digital seria)
 
 Cubierta: 150 x 210
 Interior: 148 x 210
@@ -13,7 +34,7 @@ Cubierta en cartón de alto gramaje con solapa
 28 líneas por página
 Papel crema
 
-### B. Formato actual de «Las 10 preguntas...»
+### B. Formato actual Amazon de «Las 10 preguntas...»
 
 Cubierta: 140 x 216
 Interior: 140 x 216
@@ -48,21 +69,8 @@ Manuales y libros con gráficos
 20,96 × 27,94 cm 
 Material didáctico, cuadernos y gran formato
 
-### Lo que podemos hacer
 
-No cambiamos las dimensiones para Amazon. Son muy parecidas a Ikigai. Solo que este último tiene más empaque porque tiene portada con solapas y un cartón de más gramaje. Y eso no podemos conseguirlo con KDP.
-Pero lo que sí podemos hacer es volver a subir el pdf de la tripa y dejar la edición así:
-1. Aumentamos un punto el tamaño en el cuerpo de letra. 
-2. Aumentamos la interlínea.
-3. Eso nos hará ganar 18 páginas. 
-4. Un lomo un poco más grueso.
-5. Un papel crema.
-6. Portada en brillo. No tengo mucha fe, pero podemos pedir una prueba por menos de cuatro euros. A ver.
 
-### Ejemplares para entregar o vender en mano
-Valoremos la posibilidad de imprimir 10 ó 20 ejemplares con solapa y mejor portada, para vender en mano en una presentación o para regalar en un congreso.
-
-Te puedo mirar presupuesto en una imprenta digital de calidad. No creo que salga por más de 10 euros por libro... Probablemente menos, aunque me puedo equivocar. Hace varios años que sólo imprimo en una rotativa barata de Navarra que va a escala... :)
 
 
 
