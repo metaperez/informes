@@ -1,10 +1,10 @@
 # Formatos de libros
-**He investigado los distintos formatos de libros disponibles en Amazon KDP *print on demand*. Las opciones de formato son limitadas. No permite un corte diferente de la cubierta respecto a la tripa y por tanto no se pueden colocar solapas. Tampoco está disponible el formato del libro Ikigai, aunque sí parecidos.** 
+#### He investigado los distintos formatos de libros disponibles en Amazon KDP *print on demand*. Las opciones de formato son limitadas. No permite un corte diferente de la cubierta respecto a la tripa y, por tanto, no se pueden colocar solapas. Tampoco está disponible el formato del libro de Ikigai, aunque sí parecidos
 
-#### Lo que podemos hacer para mejorar la edición
-Por un lado, las dimensiones actuales del libro «Las 10 preguntas...» son muy parecidas a las de Ikigai. Por otro lado, mantener el servicio de Amazon KDP de *print on demand* facilita extraordinarimante la distribución.
+### Un ejemplar de prueba para mejorar la edición
+Por un lado, las dimensiones actuales del libro «Las 10 preguntas...» son muy parecidas a las de Ikigai. Por otro lado, imprimir el libro en una imprenta fuera de KDP para hacerlo conforme al gusto y venderlo después en Amazon complica mucho la gestión. Para mantener el servicio de Amazon KDP de *print on demand* es mejor mantener el formato. 
 
-Por tanto creo que lo mejor es mantener el formato, pero volver a hacer el pdf con los siguientes cambios:
+Podemos encargar un ejemplar de prueba y valorarlo mientras mantenemos a la venta el actual. Te ofrezco volver a hacer el pdf con los siguientes cambios:
 
 1. Aumentar un punto el tamaño en el cuerpo de letra.
 2. Aumentar medio centímetro el ancho de la mancha de la página. 
@@ -13,16 +13,19 @@ Por tanto creo que lo mejor es mantener el formato, pero volver a hacer el pdf c
 5. Cambiar el papel a crema.
 6. Portada en brillo. No tengo mucha fe, pero podemos pedir una prueba por menos de cuatro euros. A ver.
 
-Con todo eso, podemos encargar un ejemplar de prueba y valorar, mientras mantenemos a la venta el actual.
+Asumo el coste de estos cambios.
 
-#### Ejemplares como el Ikigai para entregar o vender en mano
+### Ejemplares fuera de KDP, para entregar o vender en mano
 Puedes valorar la posibilidad de imprimir 10 ó 20 ejemplares con solapa para vender en mano en una presentación o para regalar en un congreso.
 
-Te puedo mirar presupuesto en una imprenta digital de calidad. No creo que salga por más de 10 euros por libro... Probablemente menos, aunque me puedo equivocar. Hace varios años que sólo imprimo en una rotativa barata de Navarra que va a escala... :)
+Puedo mirar presupuesto en una imprenta digital de calidad. No creo que salga por más de 10 euros por libro... Probablemente menos, aunque me puedo equivocar. Hace varios años que sólo imprimo en una rotativa barata de Navarra que va a escala... :)
 
-## FORMATOS DISPONIBLES
+Mi presupuesto para diseñar esta nueva edición es de 150 €.
+Incluye la nueva portada, la adaptación de la tripa y la gestión de imprenta.
 
-#### A. Formato Ikigai (preferido y posible en cualquier imprenta digital seria)
+## APÉNDICE DE FORMATOS DISPONIBLES
+
+### A. Formato Ikigai (preferido)
 
 Cubierta: 150 x 210
 Interior: 148 x 210
