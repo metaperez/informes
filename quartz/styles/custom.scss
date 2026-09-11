@@ -1,8 +1,14 @@
 @use "./variables.scss" as *;
 
-/* Google Fonts · Neuton */
 
+/* ==========================================================
+   LAB · VARIABLES
+   ========================================================== */
 
+:root {
+  --lab-logo-width: 58px;
+  --lab-header-space: 65px;
+}
 
 /* ==========================================================
    LAB · INFRAESTRUCTURA PROTEGIDA
@@ -65,7 +71,7 @@ article table,
 
 /* Escala general */
 html {
-  font-size: 100%;
+  font-size: 70%;
 }
 
 /* Familias */
@@ -78,9 +84,9 @@ article {
 /* Cuerpo */
 article p,
 article li {
-  font-size: 1.6em;
+  font-size: 1.5em;
   font-weight: 400;
-  line-height: 1.55;
+  line-height: 1.5;
   letter-spacing: 0;
 }
 
@@ -149,7 +155,7 @@ article h6 {
 
 /* Entradilla */
 article h4:first-of-type {
-  font-size: 1.725em;
+  font-size: 1.625em;
   font-weight: 400;
   line-height: 1.45;
 }
@@ -213,7 +219,16 @@ article small {
 /* ----------------------------------------------------------
    LOGO SUPERIOR
    ---------------------------------------------------------- */
+/* Reserva vertical permanente para el logo */
 
+.page[data-frame="full-width"] .center {
+  padding-top: var(--lab-header-space);
+}
+
+.page[data-frame="full-width"] .page-header {
+  min-height: 0;
+  margin-top: 0;
+}
 .lab-top-logo {
   position: absolute;
   top: 0;
@@ -234,7 +249,7 @@ article small {
 
 .lab-top-logo img {
   display: block;
-  width: 58px;
+  width: var(--lab-logo-width);
   height: auto;
   margin: 0;
   padding: 0;
@@ -310,12 +325,20 @@ article small {
 
 @media (max-width: 600px) {
 
-  .page[data-frame="full-width"] .page-header {
-    padding-top: 15px;
-  }
-
   .lab-footer-inner {
     padding-left: 24px;
     padding-right: 24px;
   }
+
+}
+/* ----------------------------------------------------------
+   ESCALA TIPOGRÁFICA · PANTALLAS DESDE 750px
+   ---------------------------------------------------------- */
+
+@media (min-width: 749px) {
+
+  html {
+    font-size: 90%;
+  }
+
 }
