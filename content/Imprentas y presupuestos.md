@@ -7,6 +7,8 @@ Sin embargo, **Impresum** pide 383 € por 10 ejemplares. Esquiva los 20 ejempla
 
 **Paper Plegat** hace libros. Ha trabajado con la Diputación. Lo sé porque ha impreso libros míos con buena calidad. Por algún motivo, ha rechazado el trabajo. Igual les parece pequeño. Igual se dedican a otra cosa en especialidad y salieron mal parados del trabajo para Alfons el Magnànim. Vete tú a saber.
 
+![[assets/info_penarro_quartz.svg]]
+
 La más pequeña de las imprentas contactadas es **Encuadernaciones Aguilar**. Les pedí un solo ejemplar porque no me atrevo a pedirles más de uno. No sé que calidad tienen. Pero me gusta su precio, su rapidez en contestar y su escueto presupuesto: 24 € y a otra cosa.
 
 La descripción del trabajo para todas las imprentas fue la misma:
