@@ -17,59 +17,7 @@ Tras leer cada texto, el método Aula Leo permite la práctica inmediata de las 
 **Ejercicios**
 Los ejercicios trabajan código, conciencia fonológica, vocabulario, comprensión literal, secuencia narrativa e inferencias básicas claramente sustentadas por el texto. Las imágenes funcionan como apoyo y reducen dificultades accesorias.
 
-## Bibliografía y fuentes
-
-- Base de datos LEXIN. LEXIN_DATABASE_Diccionario niños _ versión final.xlsx. Base léxica utilizada para consultar frecuencia, dispersión, longitud y características formales del vocabulario.
-
-- Corral, Silvia; Ferrero, Marta; y Goikoetxea, Edurne (2009). LEXIN: A lexical database from Spanish kindergarten and first-grade readers. Behavior Research Methods, 41(4), 1009–1017.
-
-- Ripoll Salceda, Juan Cruz (2023). Un marco para el desarrollo de la competencia lectora. Ministerio de Educación, Formación Profesional y Deportes.
-
-- De la Calle, Ana María; Guzmán-Simón, Fernando; y García-Jiménez, Eduardo (2018). El conocimiento de las grafías y la secuencia de aprendizaje de los grafemas en español: precursores de la lectura temprana. Revista de Psicodidáctica, 23(2), 128–136.
-
-- Jiménez González, Juan E.; y Ortiz González, María del Rosario. Conciencia fonológica y aprendizaje de la lectura: teoría, evaluación e intervención. Editorial Síntesis.
-
-- González, María José (1989). Análisis del desarrollo fonológico en sujetos malagueños. Infancia y Aprendizaje, 48, 7–24.
-
-- Cotto Pidgeon, Eira Idalmy; y Flores Reyes de Reichenbach, Mónica Genoveva (2022). El método fonológico comprensivo: un aporte a la enseñanza y aprendizaje de la lectoescritura en español. Estudios Pedagógicos, 48(2), 327–349.
-
-- Real Academia Española y Asociación de Academias de la Lengua Española (2010). Ortografía de la lengua española. Apartado sobre el abecedario y uso de las letras.
-
-- Gómez-Devís, M. Begoña; y Herranz-Llácer, Cristina V. (2022). Léxico disponible de escolares de la etapa primaria o básica: bases y propuesta metodológicas. Pragmalingüística, 30, 183–204.
-- 
-- Gómez-Devís, M. Begoña (2021). Disponibilidad léxica en niños de 6 años. Alcance y proyección didáctica del corpus léxico infantil. Cultura, Lenguaje y Representación, 25, 169–181.
-
-- Llisterri, Joaquim. La descripción fonética y fonológica del español: la estructura silábica. Material de consulta sobre estructuras silábicas y su frecuencia.
-
-- Arias Rodríguez, Iván (2016). Cálculo de frecuencias de aparición de fonemas y alófonos en español actual utilizando un transcriptor automático. Loquens, 3(1), e029.
-
-### Personajes
-
-|Personaje|Unidades en las que aparece|
-|---|---|
-|**Fina**|3, 4, 6, 9, 10, 11, 12, 13, 16, 18, 21, 23, 24, 25, 26, 27, 28|
-|**Felipe**|3, 4, 22, 26, 27, 28|
-|**Mamá**|1, 4, 7, 8, 12, 24, 27|
-|**Papá**|5|
-|**Abuelo**|14, 16, 22, 28|
-|**Lola**|5|
-|**Oso**|1|
-|**Osa**|1|
-|**Mono**|2|
-|**Sapo**|3, 4, 7, 8|
-|**Pato**|5, 6, 7, 8, 9, 10, 11, 12, 13, 17, 18|
-|**Vaca**|14|
-|**Ratón**|15|
-|**Perro**|15, 16|
-|**Payaso**|17|
-|**Gato**|19, 20|
-|**Gusano**|19|
-|**Jirafa**|20|
-|**Gigante**|21|
-|**Cigüeña**|25|
-|**Pingüino**|25|
-
-
+## LECTURAS Y ÁMBITO DE SONIDOS
 
 ## 1
 **Mamá, Oso y Osa**
@@ -583,3 +531,41 @@ luz, ciudad, reloj, cigüeña, flor, tres, libro, grande
 **Estructuras**
 Hasta CCVC + diptongos
 
+## Bibliografía y fuentes
+
+- Base de datos LEXIN. LEXIN_DATABASE_Diccionario niños _ versión final.xlsx. Base léxica utilizada para consultar frecuencia, dispersión, longitud y características formales del vocabulario.
+- Corral, Silvia; Ferrero, Marta; y Goikoetxea, Edurne (2009). LEXIN: A lexical database from Spanish kindergarten and first-grade readers. Behavior Research Methods, 41(4), 1009–1017.
+- Ripoll Salceda, Juan Cruz (2023). Un marco para el desarrollo de la competencia lectora. Ministerio de Educación, Formación Profesional y Deportes.
+- De la Calle, Ana María; Guzmán-Simón, Fernando; y García-Jiménez, Eduardo (2018). El conocimiento de las grafías y la secuencia de aprendizaje de los grafemas en español: precursores de la lectura temprana. Revista de Psicodidáctica, 23(2), 128–136.
+- Jiménez González, Juan E.; y Ortiz González, María del Rosario. Conciencia fonológica y aprendizaje de la lectura: teoría, evaluación e intervención. Editorial Síntesis.
+- González, María José (1989). Análisis del desarrollo fonológico en sujetos malagueños. Infancia y Aprendizaje, 48, 7–24.
+- Cotto Pidgeon, Eira Idalmy; y Flores Reyes de Reichenbach, Mónica Genoveva (2022). El método fonológico comprensivo: un aporte a la enseñanza y aprendizaje de la lectoescritura en español. Estudios Pedagógicos, 48(2), 327–349.
+- Real Academia Española y Asociación de Academias de la Lengua Española (2010). Ortografía de la lengua española. Apartado sobre el abecedario y uso de las letras.
+- Gómez-Devís, M. Begoña; y Herranz-Llácer, Cristina V. (2022). Léxico disponible de escolares de la etapa primaria o básica: bases y propuesta metodológicas. Pragmalingüística, 30, 183–204.
+- Gómez-Devís, M. Begoña (2021). Disponibilidad léxica en niños de 6 años. Alcance y proyección didáctica del corpus léxico infantil. Cultura, Lenguaje y Representación, 25, 169–181.
+- Llisterri, Joaquim. La descripción fonética y fonológica del español: la estructura silábica. Material de consulta sobre estructuras silábicas y su frecuencia.
+- Arias Rodríguez, Iván (2016). Cálculo de frecuencias de aparición de fonemas y alófonos en español actual utilizando un transcriptor automático. Loquens, 3(1), e029.
+
+---
+
+**Personaje y	unidades en las que aparece**
+Fina	3, 4, 6, 9, 10, 11, 12, 13, 16, 18, 21, 23, 24, 25, 26, 27, 28
+Felipe	3, 4, 22, 26, 27, 28
+Mamá	1, 4, 7, 8, 12, 24, 27
+Papá	5
+Abuelo	14, 16, 22, 28
+Lola	5
+Oso	1
+Osa	1
+Mono	2
+Sapo	3, 4, 7, 8
+Pato	5, 6, 7, 8, 9, 10, 11, 12, 13, 17, 18
+Vaca	14
+Ratón	15
+Perro	15, 16
+Payaso	17
+Gato	19, 20
+Gusano	19
+Jirafa	20
+Gigante	21
+Cigüeña	25
