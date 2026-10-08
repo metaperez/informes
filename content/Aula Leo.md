@@ -1,6 +1,9 @@
 # Aula Leo
 
-#### Proyecto de alfabetización inicial en español dirigido principalmente a niñas y niños de 5 a 7 años, con una progresión acumulativa de 28 textos y 112 ejercicios basados en los grafemas y fonemas más frecuentes en las primeras etapas del desarrollo lector. Su objetivo es aprender a leer comprendiendo a la vez el significado. 
+#### Proyecto de alfabetización inicial en español dirigido a niñas y niños de 5 a 7 años, con una progresión acumulativa de 28 textos y 112 ejercicios. Los textos van incorporando paulatinamente los grafemas y fonemas más frecuentes en las primeras etapas del desarrollo lector. Su objetivo es ayudar a conseguir la fluidez lectora desde la etapa más temprana, comprendiendo a la vez el significado. 
+
+**60 páginas más cubiertas**
+Cubiertas + índice + 28 dobles páginas con texto, ilustración y ejercicios + explicación didáctica + solucionario.
 
 **Textos ilustrados**
 El conjunto de las 28 lecturas mantiene personajes y situaciones recurrentes, a la vez que aumenta progresivamente sus posibilidades lingüísticas. 
@@ -16,6 +19,7 @@ Los ejercicios trabajan código, conciencia fonológica, vocabulario, comprensi�
 
 
 ## Bibliografía y fuentes
+
 
 1. Base de datos LEXIN. LEXIN_DATABASE_Diccionario niños _ versión final.xlsx. Base léxica utilizada para consultar frecuencia, dispersión, longitud y características formales del vocabulario.
 
@@ -52,7 +56,6 @@ Los ejercicios trabajan código, conciencia fonológica, vocabulario, comprensi�
 |**Papá**|5|
 |**Abuelo**|14, 16, 22, 28|
 |**Lola**|5|
-|**Narrador/a «yo»**|20|
 |**Oso**|1|
 |**Osa**|1|
 |**Mono**|2|
@@ -406,13 +409,12 @@ CVC -n/-s/-r/-l + diptongo)
 
 ## 20
 **El gato y la jirafa**
-Yo veo un gato.
-El gato tiene una pelota bajo un árbol.
-La pelota no sale.
-Yo tiro de la pelota.
-No sale.
-Una jirafa pasa.
-La jirafa saca la pelota.
+El gato juega con una pelota.  
+La pelota queda en una rama alta.  
+El gato mira la pelota.  
+Una jirafa pasa.  
+La jirafa ayuda al gato.  
+La jirafa toma la pelota.  
 El gato salta.
 
 **Repertorio**
