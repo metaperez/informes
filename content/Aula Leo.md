@@ -17,34 +17,31 @@ Tras leer cada texto, el método Aula Leo permite la práctica inmediata de las 
 **Ejercicios**
 Los ejercicios trabajan código, conciencia fonológica, vocabulario, comprensión literal, secuencia narrativa e inferencias básicas claramente sustentadas por el texto. Las imágenes funcionan como apoyo y reducen dificultades accesorias.
 
-
 ## Bibliografía y fuentes
 
+- Base de datos LEXIN. LEXIN_DATABASE_Diccionario niños _ versión final.xlsx. Base léxica utilizada para consultar frecuencia, dispersión, longitud y características formales del vocabulario.
 
-1. Base de datos LEXIN. LEXIN_DATABASE_Diccionario niños _ versión final.xlsx. Base léxica utilizada para consultar frecuencia, dispersión, longitud y características formales del vocabulario.
+- Corral, Silvia; Ferrero, Marta; y Goikoetxea, Edurne (2009). LEXIN: A lexical database from Spanish kindergarten and first-grade readers. Behavior Research Methods, 41(4), 1009–1017.
 
-2. Corral, Silvia; Ferrero, Marta; y Goikoetxea, Edurne (2009). LEXIN: A lexical database from Spanish kindergarten and first-grade readers. Behavior Research Methods, 41(4), 1009–1017.
+- Ripoll Salceda, Juan Cruz (2023). Un marco para el desarrollo de la competencia lectora. Ministerio de Educación, Formación Profesional y Deportes.
 
-3. Ripoll Salceda, Juan Cruz (2023). Un marco para el desarrollo de la competencia lectora. Ministerio de Educación, Formación Profesional y Deportes.
+- De la Calle, Ana María; Guzmán-Simón, Fernando; y García-Jiménez, Eduardo (2018). El conocimiento de las grafías y la secuencia de aprendizaje de los grafemas en español: precursores de la lectura temprana. Revista de Psicodidáctica, 23(2), 128–136.
 
-4. De la Calle, Ana María; Guzmán-Simón, Fernando; y García-Jiménez, Eduardo (2018). El conocimiento de las grafías y la secuencia de aprendizaje de los grafemas en español: precursores de la lectura temprana. Revista de Psicodidáctica, 23(2), 128–136.
+- Jiménez González, Juan E.; y Ortiz González, María del Rosario. Conciencia fonológica y aprendizaje de la lectura: teoría, evaluación e intervención. Editorial Síntesis.
 
-5. Jiménez González, Juan E.; y Ortiz González, María del Rosario. Conciencia fonológica y aprendizaje de la lectura: teoría, evaluación e intervención. Editorial Síntesis.
+- González, María José (1989). Análisis del desarrollo fonológico en sujetos malagueños. Infancia y Aprendizaje, 48, 7–24.
 
-6. González, María José (1989). Análisis del desarrollo fonológico en sujetos malagueños. Infancia y Aprendizaje, 48, 7–24.
+- Cotto Pidgeon, Eira Idalmy; y Flores Reyes de Reichenbach, Mónica Genoveva (2022). El método fonológico comprensivo: un aporte a la enseñanza y aprendizaje de la lectoescritura en español. Estudios Pedagógicos, 48(2), 327–349.
 
-7. Cotto Pidgeon, Eira Idalmy; y Flores Reyes de Reichenbach, Mónica Genoveva (2022). El método fonológico comprensivo: un aporte a la enseñanza y aprendizaje de la lectoescritura en español. Estudios Pedagógicos, 48(2), 327–349.
+- Real Academia Española y Asociación de Academias de la Lengua Española (2010). Ortografía de la lengua española. Apartado sobre el abecedario y uso de las letras.
 
-8. Real Academia Española y Asociación de Academias de la Lengua Española (2010). Ortografía de la lengua española. Apartado sobre el abecedario y uso de las letras.
+- Gómez-Devís, M. Begoña; y Herranz-Llácer, Cristina V. (2022). Léxico disponible de escolares de la etapa primaria o básica: bases y propuesta metodológicas. Pragmalingüística, 30, 183–204.
+- 
+- Gómez-Devís, M. Begoña (2021). Disponibilidad léxica en niños de 6 años. Alcance y proyección didáctica del corpus léxico infantil. Cultura, Lenguaje y Representación, 25, 169–181.
 
-9. Gómez-Devís, M. Begoña; y Herranz-Llácer, Cristina V. (2022). Léxico disponible de escolares de la etapa primaria o básica: bases y propuesta metodológicas. Pragmalingüística, 30, 183–204.
+- Llisterri, Joaquim. La descripción fonética y fonológica del español: la estructura silábica. Material de consulta sobre estructuras silábicas y su frecuencia.
 
-10. Gómez-Devís, M. Begoña (2021). Disponibilidad léxica en niños de 6 años. Alcance y proyección didáctica del corpus léxico infantil. Cultura, Lenguaje y Representación, 25, 169–181.
-
-11. Llisterri, Joaquim. La descripción fonética y fonológica del español: la estructura silábica. Material de consulta sobre estructuras silábicas y su frecuencia.
-
-12. Arias Rodríguez, Iván (2016). Cálculo de frecuencias de aparición de fonemas y alófonos en español actual utilizando un transcriptor automático. Loquens, 3(1), e029.
-
+- Arias Rodríguez, Iván (2016). Cálculo de frecuencias de aparición de fonemas y alófonos en español actual utilizando un transcriptor automático. Loquens, 3(1), e029.
 
 ### Personajes
 
