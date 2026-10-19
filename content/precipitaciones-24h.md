@@ -1,4 +1,3 @@
-
 ---
 title: "Adam en la Safor y la Marina Alta"
 socialImage: "https://lab.javierperez.info/assets/precipitaciones-24h.png"
