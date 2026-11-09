@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Visor cartográfico · Teruel</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Página de prueba */
+
+    .page {
+      width: min(100%, 760px);
+      margin: 0 auto;
+      padding: 10px;
+    }
+
+    /* Visor 3:4 */
+
+    #viewer {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      overflow: hidden;
+    }
+@media (min-width: 700px) {
+  #viewer {
+    aspect-ratio: 1 / 1;
+    width: min(100%, 760px, 90vh);
+    margin: 0 auto;
+  }
+}
+
+/* Interfaz */
+
+.interface {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  pointer-events: none;
+}
+
+.interface h1 {
+  margin: 0 0 8px 0;
+  font-size: clamp(22px, 5vw, 34px);
+  line-height: 1.05;
+  overflow-wrap: break-word;
+}
+
+/*
+  La descripción puede ocupar varias líneas.
+  Si no existe, no ocupa espacio.
+*/
+.interface p {
+  margin: 0 0 14px 0;
+  max-width: 32em;
+  font-size: 14px;
+  line-height: 1.35;
+  overflow-wrap: break-word;
+}
+
+.interface p:empty {
+  display: none;
+}
+
+
+/* Selector y buscador */
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 520px;
+  gap: 8px;
+  pointer-events: auto;
+}
+
+#indicator {
+  flex: 0 0 auto;
+  min-width: 0;
+  max-width: 50%;
+  padding: 7px 8px;
+  font-size: 14px;
+  pointer-events: auto;
+}
+
+#municipality-search {
+  flex: 1 1 auto;
+  min-width: 0;
+  width: auto;
+  padding: 7px 8px;
+  font-size: 14px;
+  pointer-events: auto;
+}
+
+
+/* Ajuste para móviles estrechos */
+
+@media (max-width: 374px) {
+
+  .interface {
+    padding: 10px;
+  }
+
+  .toolbar {
+    gap: 6px;
+  }
+
+}
+    /* Leyenda: la construiremos después */
+
+    #legend {
+      width: 220px;
+      margin-top: 12px;
+      pointer-events: none;
+    }
+
+    .legend-title {
+      margin-bottom: 4px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .legend-bar {
+      width: 100%;
+      height: 10px;
+      background: linear-gradient(to right,
+          #f7fbff,
+          #deebf7,
+          #9ecae1,
+          #4292c6,
+          #084594);
+    }
+
+    .legend-threshold-bar {
+      display: flex;
+      width: 100%;
+      height: 10px;
+    }
+
+    .legend-threshold-bar span {
+      flex: 1 1 0;
+      min-width: 0;
+    }
+
+    .legend-threshold-values {
+      position: relative;
+      height: 14px;
+      margin-top: 3px;
+      font-size: 11px;
+      line-height: 14px;
+    }
+
+    .legend-threshold-values span {
+      position: absolute;
+      top: 0;
+      white-space: nowrap;
+      transform: translateX(-50%);
+    }
+
+    .legend-values {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3px;
+      font-size: 11px;
+    }
+
+/* Leyenda + controles del mapa */
+
+.map-tools {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 12px;
+  pointer-events: none;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+  pointer-events: auto;
+}
+
+.controls button {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid #999;
+  background: #ffffff;
+  font-size: 17px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+    /* Mapa */
+
+    #map {
+      position: absolute;
+      inset: 0;
+    }
+
+    #map svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Provincias de contexto */
+
+    .province {
+      fill: #e5e5e5;
+      stroke: #ffffff;
+      stroke-width: 1;
+      vector-effect: non-scaling-stroke;
+    }
+
+    /* Municipios de Teruel */
+
+    .municipality {
+      stroke: #ffffff;
+      stroke-width: 0.45;
+      vector-effect: non-scaling-stroke;
+    }
+
+    .municipality.selected {
+  stroke: #000000;
+  stroke-width: 1.5;
+}
+
+#detail-panel {
+  position: absolute;
+  z-index: 20;
+
+  right: 15px;
+  bottom: 15px;
+
+  width: max(33.333%, 180px);
+  max-width: calc(100% - 30px);
+  max-height: 25%;
+
+  box-sizing: border-box;
+  padding: 16px;
+
+  background: rgba(255,255,255,.95);
+  border: 1px solid #ccc;
+
+  display: none;
+}
+
+#detail-panel.visible {
+  display: block;
+}
+
+.detail-name {
+  margin: 0 0 4px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.detail-code {
+  margin-bottom: 12px;
+  font-size: 11px;
+}
+
+.detail-indicator {
+  font-size: 12px;
+}
+
+.detail-value {
+  margin-top: 2px;
+  font-size: 18px;
+  font-weight: bold;
+}
+  </style>
+</head>
+
+
+<body>
+
+  <main class="page">
+
+    <section id="viewer">
+
+      <header class="interface">
+
+        <h1 id="viewer-title"></h1>
+
+        <p id="viewer-description"></p>
+
+       <div class="toolbar">
+
+  <select id="indicator">
+  </select>
+
+  <input
+    id="municipality-search"
+    type="search"
+    list="municipality-list"
+    placeholder="Buscar municipio"
+    autocomplete="off"
+  >
+
+  <datalist id="municipality-list"></datalist>
+
+</div>
+
+        <div class="map-tools">
+
+  <div id="legend"></div>
+
+  <div class="controls">
+    <button type="button">−</button>
+    <button type="button">+</button>
+    <button type="button">⌂</button>
+  </div>
+
+</div>
+
+      </header>
+
+      <div id="map"></div>
+
+      <div id="detail-panel"></div>
+
+    </section>
+
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+
+  <script src="projects/teruel.js"></script>
+
+  <script src="src/viewer.js"></script>
+
+</body>
+
+</html>
