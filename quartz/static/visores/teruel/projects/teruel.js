@@ -2,9 +2,11 @@ const projectConfig = {
 
   id: "teruel",
 
-  title: "La trufa en Teruel",
+  title: "La expansión de la trufa en Teruel",
 
-  description: "Superficie cultivada, población, edad y nivel de renta municipal.",
+  description: "Superficie cultivada por municipios desde antes de 1999 hasta 2025",
+
+  legendTitle: "Hectáreas cultivadas",
 
 maps: {
 
@@ -45,46 +47,87 @@ mapStyle: {
   },
 
   municipalities: {
-    noDataFill: "#d9d9d9",
+    noDataFill: "#FFFFFF",
     stroke: "#ffffff",
     strokeWidth: 0.45
   }
 
 },
 
-  data: "data/poblacion_teruel_2025.csv",
+  data: "data/hidrotuber_teruel.csv",
 
-  initialIndicator: "poblacion",
+  initialIndicator: "acum_4",
 
   indicators: {
 
-    trufa: {
-      label: "Trufa cultivada",
-      enabled: false
-    },
-
-    poblacion: {
-      field: "POBLACION",
-      label: "Población",
-      unit: "habitantes",
+    ha_e0: {
+      field: "ha_e0",
+      label: "Antes de 1999",
+      unit: "ha",
       color: "#0066A4",
       enabled: true,
 
       scale: {
         mode: "steps",
-        breaks: [100, 250, 500, 1700],
+        breaks: [5, 20, 75, 250],
         intensities: [0.15, 0.30, 0.60, 0.80, 1]
       }
     },
 
-    edad: {
-      label: "Edad media",
-      enabled: false
+    acum_1: {
+      field: "acum_1",
+      label: "1999",
+      unit: "ha",
+      color: "#0066A4",
+      enabled: true,
+
+      scale: {
+        mode: "steps",
+        breaks: [5, 20, 75, 250],
+        intensities: [0.15, 0.30, 0.60, 0.80, 1]
+      }
     },
 
-    renta: {
-      label: "Renta media",
-      enabled: false
+    acum_2: {
+      field: "acum_2",
+      label: "2009",
+      unit: "ha",
+      color: "#0066A4",
+      enabled: true,
+
+      scale: {
+        mode: "steps",
+        breaks: [5, 20, 75, 250],
+        intensities: [0.15, 0.30, 0.60, 0.80, 1]
+      }
+    },
+
+    acum_3: {
+      field: "acum_3",
+      label: "2018",
+      unit: "ha",
+      color: "#0066A4",
+      enabled: true,
+
+      scale: {
+        mode: "steps",
+        breaks: [5, 20, 75, 250],
+        intensities: [0.15, 0.30, 0.60, 0.80, 1]
+      }
+    },
+
+    acum_4: {
+      field: "acum_4",
+      label: "2025",
+      unit: "ha",
+      color: "#0066A4",
+      enabled: true,
+
+      scale: {
+        mode: "steps",
+        breaks: [5, 20, 75, 250],
+        intensities: [0.15, 0.30, 0.60, 0.80, 1]
+      }
     }
   },
 

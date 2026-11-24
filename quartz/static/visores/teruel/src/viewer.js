@@ -168,7 +168,7 @@ Promise.all([
 const dataByMunicipality =
   new Map(
     data.map(d => [
-      d.COD_INE,
+      String(d.c_muni_ine).trim().padStart(5, "0"),
       d
     ])
   );
@@ -255,7 +255,7 @@ function updateMap() {
   const values = new Map(
 
   data.map(d => [
-    d.COD_INE,
+    String(d.c_muni_ine).trim().padStart(5, "0"),
     +d[config.field]
   ])
 
@@ -299,10 +299,17 @@ let colorScale;
 if (config.scale.mode === "steps") {
 
   if (Array.isArray(config.scale.breaks)) {
-    colorScale =
-      d3.scaleThreshold()
-        .domain(config.scale.breaks.map(limit => limit + 1))
-        .range(tones);
+    colorScale = value => {
+      if (!Number.isFinite(value) || value <= 0) {
+        return projectConfig.mapStyle.municipalities.noDataFill;
+      }
+
+      if (value <= 5) return tones[0];
+      if (value <= 20) return tones[1];
+      if (value <= 75) return tones[2];
+      if (value <= 250) return tones[3];
+      return tones[4];
+    };
   } else {
     colorScale =
       d3.scaleQuantize()
@@ -361,7 +368,7 @@ if (config.scale.mode === "steps") {
 
       const value =
         values.get(
-          d.properties.COD_INE
+          String(d.properties.COD_INE).trim().padStart(5, "0")
         );
 
       return Number.isFinite(value)
@@ -426,13 +433,39 @@ function updateLegend() {
 
 
   /*
-    Unidad
+    Total provincial del periodo seleccionado
   */
+
+  const seenMunicipalities = new Set();
+  let provincialTotal = 0;
+
+  data.forEach(row => {
+    const code =
+      String(row.c_muni_ine).trim().padStart(5, "0");
+
+    if (seenMunicipalities.has(code)) {
+      return;
+    }
+
+    seenMunicipalities.add(code);
+
+    const value = +row[config.field];
+
+    if (Number.isFinite(value)) {
+      provincialTotal += value;
+    }
+  });
+
+  const formattedTotal = provincialTotal
+    .toLocaleString("es-ES", {
+      minimumFractionDigits: 1,
+      maximumFractionDigits: 1
+    });
 
   legend
     .append("div")
-    .attr("class", "legend-title")
-    .text(config.unit);
+    .attr("class", "legend-total-line")
+    .html(`<span class="legend-total-number">${formattedTotal}</span> hectáreas cultivadas`);
 
 
   /*
@@ -452,9 +485,6 @@ function updateLegend() {
 
     if (Array.isArray(config.scale.breaks)) {
 
-      const formatValue = value =>
-        String(value).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-
       const bar =
         legend
           .append("div")
@@ -466,17 +496,41 @@ function updateLegend() {
           .style("background", tone);
       });
 
-      const values =
-        legend
-          .append("div")
-          .attr("class", "legend-threshold-values");
+      const values = legend
+        .append("div")
+        .attr("class", "legend-threshold-values")
+        .style("display", "flex");
 
-      config.scale.breaks.forEach((limit, index) => {
+      ["0–5", "5–20", "20–75", "75–250", "> 250"].forEach(label => {
         values
           .append("span")
-          .style("left", `${((index + 1) / tones.length) * 100}%`)
-          .text(formatValue(limit));
+          .style("position", "static")
+          .style("transform", "none")
+          .style("flex", "1 1 0")
+          .style("text-align", "center")
+          .text(label);
       });
+
+      const zeroRow = legend
+        .append("div")
+        .style("display", "flex")
+        .style("align-items", "center")
+        .style("gap", "6px")
+        .style("margin-top", "8px")
+        .style("font-size", "11px")
+        .style("white-space", "nowrap");
+
+      zeroRow
+        .append("span")
+        .style("width", "14px")
+        .style("height", "14px")
+        .style("background", projectConfig.mapStyle.municipalities.noDataFill)
+        .style("flex", "0 0 14px");
+
+      zeroRow
+        .append("span")
+        .style("font-size", "14.5px")
+        .text("Sin superficie cultivada");
 
     } else {
 
@@ -680,7 +734,7 @@ function zoomToMunicipality(feature) {
 function updateDetailPanel(feature) {
 
   const code =
-    feature.properties.COD_INE;
+    String(feature.properties.COD_INE).trim().padStart(5, "0");
 
   const name =
     feature.properties.NOMBRE;
@@ -731,10 +785,16 @@ function updateDetailPanel(feature) {
     .attr("class", "detail-indicator")
     .text(config.label);
 
+  const formattedValue =
+    new Intl.NumberFormat("es-ES", {
+      useGrouping: true,
+      maximumFractionDigits: 2
+    }).format(value);
+
   panel
     .append("div")
     .attr("class", "detail-value")
-    .text(`${value} ${config.unit}`);
+    .text(`${formattedValue} ${config.unit}`);
 }
 
 /*
@@ -761,8 +821,8 @@ function selectMunicipality(feature) {
     .datum(feature)
     .attr("d", path)
     .attr("fill", "none")
-    .attr("stroke", "#ffffff")
-    .attr("stroke-width", 1.90)
+    .attr("stroke", "#E87722")
+    .attr("stroke-width", 2.28)
     .attr(
       "vector-effect",
       "non-scaling-stroke"
