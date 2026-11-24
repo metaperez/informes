@@ -300,7 +300,11 @@ if (config.scale.mode === "steps") {
 
   if (Array.isArray(config.scale.breaks)) {
     colorScale = value => {
-      if (!Number.isFinite(value) || value <= 0) {
+      if (!Number.isFinite(value) || value === 0) {
+        return projectConfig.mapStyle.municipalities.noDataFill;
+      }
+
+      if (value < 0) {
         return projectConfig.mapStyle.municipalities.noDataFill;
       }
 
@@ -490,6 +494,10 @@ function updateLegend() {
           .append("div")
           .attr("class", "legend-threshold-bar");
 
+      bar
+        .append("span")
+        .style("background", projectConfig.mapStyle.municipalities.noDataFill);
+
       tones.forEach(tone => {
         bar
           .append("span")
@@ -501,7 +509,7 @@ function updateLegend() {
         .attr("class", "legend-threshold-values")
         .style("display", "flex");
 
-      ["0–5", "5–20", "20–75", "75–250", "> 250"].forEach(label => {
+      ["0", "0–5", "5–20", "20–75", "75–250", ">250"].forEach(label => {
         values
           .append("span")
           .style("position", "static")
@@ -510,27 +518,6 @@ function updateLegend() {
           .style("text-align", "center")
           .text(label);
       });
-
-      const zeroRow = legend
-        .append("div")
-        .style("display", "flex")
-        .style("align-items", "center")
-        .style("gap", "6px")
-        .style("margin-top", "8px")
-        .style("font-size", "11px")
-        .style("white-space", "nowrap");
-
-      zeroRow
-        .append("span")
-        .style("width", "14px")
-        .style("height", "14px")
-        .style("background", projectConfig.mapStyle.municipalities.noDataFill)
-        .style("flex", "0 0 14px");
-
-      zeroRow
-        .append("span")
-        .style("font-size", "14.5px")
-        .text("Sin superficie cultivada");
 
     } else {
 

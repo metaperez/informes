@@ -2,9 +2,9 @@ const projectConfig = {
 
   id: "teruel",
 
-  title: "La expansión de la trufa en Teruel",
+  title: "Expansión de la trufa en Teruel",
 
-  description: "Superficie cultivada por municipios desde antes de 1999 hasta 2025",
+  description: "Superficie cultivada por municipios, 1999–2025",
 
   legendTitle: "Hectáreas cultivadas",
 
