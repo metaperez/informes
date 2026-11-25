@@ -47,7 +47,8 @@ mapStyle: {
   },
 
   municipalities: {
-    noDataFill: "#FFFFFF",
+    zeroFill: "#FFFFFF",
+    noDataFill: "#d9d9d9",
     stroke: "#ffffff",
     strokeWidth: 0.45
   }
@@ -69,7 +70,7 @@ mapStyle: {
 
       scale: {
         mode: "steps",
-        breaks: [5, 20, 75, 250],
+        breaks: [5, 20, 75, 250, 900],
         intensities: [0.15, 0.30, 0.60, 0.80, 1]
       }
     },
@@ -83,7 +84,7 @@ mapStyle: {
 
       scale: {
         mode: "steps",
-        breaks: [5, 20, 75, 250],
+        breaks: [5, 20, 75, 250, 900],
         intensities: [0.15, 0.30, 0.60, 0.80, 1]
       }
     },
@@ -97,7 +98,7 @@ mapStyle: {
 
       scale: {
         mode: "steps",
-        breaks: [5, 20, 75, 250],
+        breaks: [5, 20, 75, 250, 900],
         intensities: [0.15, 0.30, 0.60, 0.80, 1]
       }
     },
@@ -111,7 +112,7 @@ mapStyle: {
 
       scale: {
         mode: "steps",
-        breaks: [5, 20, 75, 250],
+        breaks: [5, 20, 75, 250, 900],
         intensities: [0.15, 0.30, 0.60, 0.80, 1]
       }
     },
@@ -125,7 +126,7 @@ mapStyle: {
 
       scale: {
         mode: "steps",
-        breaks: [5, 20, 75, 250],
+        breaks: [5, 20, 75, 250, 900],
         intensities: [0.15, 0.30, 0.60, 0.80, 1]
       }
     }

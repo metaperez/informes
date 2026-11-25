@@ -300,19 +300,22 @@ if (config.scale.mode === "steps") {
 
   if (Array.isArray(config.scale.breaks)) {
     colorScale = value => {
-      if (!Number.isFinite(value) || value === 0) {
+      if (!Number.isFinite(value)) {
         return projectConfig.mapStyle.municipalities.noDataFill;
       }
 
-      if (value < 0) {
-        return projectConfig.mapStyle.municipalities.noDataFill;
+      if (value === 0) {
+        return projectConfig.mapStyle.municipalities.zeroFill;
       }
 
-      if (value <= 5) return tones[0];
-      if (value <= 20) return tones[1];
-      if (value <= 75) return tones[2];
-      if (value <= 250) return tones[3];
-      return tones[4];
+      if (value > 0 && value <= 5) return tones[0];
+      if (value > 5 && value <= 20) return tones[1];
+      if (value > 20 && value <= 75) return tones[2];
+      if (value > 75 && value <= 250) return tones[3];
+      if (value > 250 && value <= 900) return tones[4];
+      if (value > 900) return "#00333D";
+
+      return projectConfig.mapStyle.municipalities.noDataFill;
     };
   } else {
     colorScale =
@@ -496,7 +499,7 @@ function updateLegend() {
 
       bar
         .append("span")
-        .style("background", projectConfig.mapStyle.municipalities.noDataFill);
+        .style("background", projectConfig.mapStyle.municipalities.zeroFill);
 
       tones.forEach(tone => {
         bar
@@ -504,12 +507,16 @@ function updateLegend() {
           .style("background", tone);
       });
 
+      bar
+        .append("span")
+        .style("background", "#00333D");
+
       const values = legend
         .append("div")
         .attr("class", "legend-threshold-values")
         .style("display", "flex");
 
-      ["0", "0–5", "5–20", "20–75", "75–250", ">250"].forEach(label => {
+      ["0", "0-5", "5-20", "20-75", "75-250", "250-900", ">900"].forEach(label => {
         values
           .append("span")
           .style("position", "static")
